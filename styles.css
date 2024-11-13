@@ -1,0 +1,392 @@
+body{
+    background-color: #F5F5F5;
+    
+}
+@font-face {
+    font-family: 'KeepSmile';
+    src: url('Keepsmile.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BreviaMedium';
+    src: url('Brevia-Medium.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BreviaRegular';
+    src: url('Brevia-Regular.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    
+    background-image: url('backdots.png');
+    /*background-size: 200%; /* Scales the image to twice its normal size, so only a portion is visible */
+    background-position: top left; /* Aligns the bottom-right portion of the scaled image */
+    background-size: 800px 600px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+.header{
+
+ height: 180px;
+
+width : 100%;
+
+padding-top: 26px;
+
+}
+
+*{
+    margin : 0;
+}
+  
+.header-elements{
+
+
+height:73px;
+width: 166px;
+float : left;
+margin-left: 170px;
+}
+.header-elements img{
+    height: 80px;
+    width: 104.2px;
+
+}
+.tictactext{
+    height:73px;
+    display: flex;
+    align-items: center;
+    font-family: 'BreviaMedium';
+  font-size: 21px;
+    width:150px;
+    float: left;
+    color: #444;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.abouttext{
+    height:73px;
+    display: flex;
+    align-items: center;
+    font-family: 'BreviaMedium';
+    font-size:20px;
+    width:100px;
+    float: left;
+    color: #444;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.icondown{
+    display: flex;
+    align-items: center;
+    height:73px;
+
+}
+.greenbox{
+    position: relative;
+    height: 540px;
+    background-image: linear-gradient(to right, rgba(2,193,85,1), rgba(0,108,49,1));
+    margin-top: 93px;
+    margin-bottom: 55px;
+    margin-left: 170px;
+    margin-right: 86px;
+    border-radius: 75px;
+    
+
+}
+.leaf-right{
+
+    float: left;
+    width: 20%;
+    margin-top: 98px;
+    transform: rotate(-3deg);
+    margin-left: 102px;
+    transform: scale(1);
+    z-index: 1;
+    margin-right: 55px;
+    
+}
+.mint-packet{
+    position: absolute;
+    left: 170px;
+    margin-left: 67px;
+    transform: rotate(6deg) scale(1);
+    float: left;
+    width: 20%;
+    z-index: 3;
+    margin-top: -51px;
+}
+.leaf-left{
+    float: left;
+    width: 20%;
+    margin-top: 45px;
+    margin-left: 31px;
+    transform: scale(0.8);
+    
+}
+.textinbox{
+height:100px;
+width:200px;
+    margin-top: 132px;
+    float : left;
+    
+    
+  
+}
+.boxheading{
+    color: #F5F5F5;
+    font-family: 'BreviaMedium';
+  font-style: normal;
+  font-size: 28px;
+  
+}
+
+
+.freshmints{
+margin-top: 11px;
+font-family: 'KeepSmile';
+font-size: 82px;
+color:#F5F5F5;
+
+}
+.green-describe{
+    width:649px;
+    height:400px;
+    font-size:20px;
+    font-family: 'BreviaRegular';
+    color: #F5F5F5;
+    margin-top: 12px;
+    font-style: normal;
+
+}
+
+
+.image{
+    transition: transform 0.4s, opacity 0.4s;
+}
+.green-icons{
+    cursor: pointer;
+}
+
+.green-icons:hover .leaf-right {
+    transform: scale(1.1) rotate(10deg);
+                       
+}
+.green-icons:hover .mint-packet{
+    transform: scale(1.15) translate(-5px, 30px) rotate(-4deg); 
+     
+}
+.green-icons:hover .leaf-left {
+    transform: translate(-5px, 60px) scale(0.85) rotate(10deg);
+}
+.tictactext:hover{
+    color: green;
+    transform:translate(0px, -3px);
+}
+.abouttext:hover{
+    color: green;
+    transform:translate(0px, -3px);
+}
+.discover-me{
+    margin-left: 180px;
+    margin-top: 105px;
+    font-family: 'KeepSmile';
+    font-size: 60px;
+    color: rgb(68, 68, 68);
+    
+
+}
+.discover-me-nextline{
+    width:100%;
+    font-family: 'BreviaRegular';
+    color: rgb(68, 68, 68);
+}
+.discover-description{
+    width: 50%;
+    margin-left: 180px;
+    margin-top: 74px;
+    font-size: 16px;
+    float: left;
+    letter-spacing: 0.2px;
+    
+}
+.cloud-image{
+    width:50%
+}
+.nutrition{
+    width:50%;
+    float:left;
+}
+.nutrition-header{
+    margin-left: 180px;
+    margin-top: -11px;
+    font-family: 'KeepSmile';
+    font-size: 60px;
+    color: rgb(68, 68, 68);
+}
+.nutrition-image{
+    margin-left: 180px;
+    margin-top: 70px;
+
+}
+.nutrition-about{
+    margin-left: 180px;
+    font-family: 'BreviaRegular';
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    margin-top: 48px;
+}
+.sizes{
+    float:left;
+    width:50%;
+}
+.sizes-header{
+    font-family: 'KeepSmile';
+    font-size: 60px;
+    color: rgb(68, 68, 68);
+    margin-top: -11px;
+}
+.sizes-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-end;
+    height: 475px;
+    margin-right:252px;
+    
+    
+}
+.img1{
+
+    width :30%;
+    
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    
+    
+}
+.img2{
+
+    width :70%;
+    
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    
+    
+}
+.img3{
+
+    width :30%;
+    
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    
+    
+}
+.img4{
+
+    width :70%;
+    
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    
+    
+}
+.bold{
+    font-family: 'BreviaMedium';
+}
+.regular{
+    font-family: 'BreviaRegular';
+
+}
+.leaf-corner{
+
+    width: 309px;
+    height: 159px;
+    margin-top: 264px;
+    margin-left: 436px;
+}
+
+.footer{
+    position: relative;
+    height: 493px;
+    width: 100%;
+background-size: contain;
+}
+.back-footer{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 100%;
+    
+    z-index: 2;
+
+}
+.middle-footer{
+    position: absolute;
+    top: -50px;
+    left: -6px;
+    z-index: 1;
+
+}
+.front-footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 1px;
+
+   
+    
+}
+.nutrition-sizes{
+
+    height : 1198px;
+}
+.cloud-corner{
+    position: absolute;
+    top: -231px;
+    right: 162px;
+    z-index: 3;
+    transform: scale(0.8);
+
+}
+
+.icons-footer{
+    display: flex;
+    z-index: 4;
+    position: relative;
+    justify-content: center;
+    gap :10px 20px;
+}
+.credits-row{
+    display: flex;
+    z-index: 4;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'BreviaMedium';
+    color: #F5F5F5;
+    padding-top: 41px;
+    
+
+
+}
+.credits{
+    font-size: 17.5px;
+}
+.reserved-text{
+    font-size: 16px;
+}
+.footer-icons-credits{
+padding-top: 303px;
+
+}
